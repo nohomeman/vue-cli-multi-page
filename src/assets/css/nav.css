@@ -1,0 +1,262 @@
+	.headerBox {
+        background: #ffffff;
+        width: 100%;
+        height:70PX;
+    }
+    .headerMenu {
+        width:1200px;
+        margin:auto;
+        padding:12px 0px;
+    }
+    .headerMenu .logo {
+        width:137px;
+        float:left;
+    }
+    .headerMenu .logo img {
+        max-width:137px;
+        margin-top: 5px;
+    }
+    .headerMenu .menu {
+        float:right;
+    }
+    .headerMenu .menu .navli {
+        margin-top: 10px;
+        padding: 0 10px;
+        cursor: pointer;
+        float: left;
+        margin: auto 5px;
+        padding-top:9px;
+        text-align: center;
+        font-size: 15px;
+        display:inline-block;
+        height:35px;
+    }
+    .headerMenu .menu .navli a {
+        color:#221815;
+        text-decoration: none;
+        display: block;
+        line-height: 35px;
+        border-bottom:solid 2px #ffffff;
+        transition: all 0.3s ease 0s;
+    }
+    .headerMenu .menu .navli a:hover,.headerMenu .menu .nav li.hover a {
+        color: #d70937;
+        border-bottom:solid 2px #d70937;
+    }
+    .nav .NavMenu {
+        display: inline-block;
+        width:140px;
+        height:39px;
+        font-size:15px;
+        color:#5e5e5e;
+        text-align:center;
+        margin:-6px 25px;
+        position: relative;
+        float: left;
+        padding-top:9px ;
+    }
+    .headerMenu .menu .nav .NavMenu .Navmylogin {
+        width: 138px;
+        color: #5e5e5e;
+        border-radius: 5px;
+        border: solid #eeeeee 1px;
+        position: relative;
+        z-index: 2;
+    }
+    .myloginlist {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        background: #ffffff;
+        margin:0px -17px 0px ;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -ms-transition: all .2s;
+        transition: all .2s;
+        border: solid #eeeeee 1px;
+        border-radius: 5px 0 5px 5px;
+        padding-top: 10px;
+    }
+    .myloginlist li {
+        margin-top: 10px;
+        padding: 0 10px;
+        cursor: pointer;
+        float: left;
+        margin: auto 5px;
+        padding-top:9px;
+        text-align: center;
+        font-size: 14px;
+        display:inline-block;
+        height:36px;
+    }
+    .myloginlist li.logout{
+        background: #f8f8f8
+    }
+    .myloginlist li.login {
+            height: 53px;
+    }
+    .myloginlist li.login a{
+        border: 1px solid #d7d7d7;
+        margin: 10px 20px;
+        height: 34px;
+        line-height: 34px;
+        border-radius: 3px;
+    }
+    .myloginlist li.login a:hover{
+        background: #d7d7d7;
+
+        }
+    .myloginlist .line a:hover{
+        background: #ff3434;
+        color: #ffffff!important;
+        border: none!important;
+    }
+    .myloginlist li a {
+        color:#5e5e5e;
+        text-decoration: none;
+        display: block;
+        line-height: 36px;
+        transition: all 0.2s ease 0s;
+    }
+
+    .nav .NavMenu:hover .myloginlist {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        margin-top: 44px;
+    }
+    .headerMenu .menu .nav .NavMenu:hover .Navmylogin {
+        border-bottom: none;
+        background: #ffffff;
+        border-radius: 5px 5px 0 0;
+    }
+    .myloginlist li {
+        width: 180px;
+        margin:0px!important;
+        padding: 0px!important;
+    }
+    .animate {
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -ms-transition: all .3s;
+        transition: all .3s;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+    }
+    .userimg {
+        margin-left: 3px;
+        margin-right: 5px;
+        margin-top: -5px;
+    }
+    .arrow {
+        margin: 0px 0px 0px 3px;
+        float: none;
+        transition-duration:.8s;
+    }
+    .animate li {
+        padding: 10px 27px;
+    }
+    .nav .NavMenu:hover .Navmylogin .arrow {
+        transform: rotate(180deg);
+    }
+    .nav .list .menu_list {
+        border-right: 1px #eeeeee solid;
+        border-left: 1px #eeeeee solid;
+        border-bottom: 1px #eeeeee solid;
+        /*border-top: 1px #eeeeee solid;*/
+       /* display: none;*/
+        width: 99px;
+        margin-top: -52px;
+        position: absolute;
+        z-index: 100;
+        background: #ffffff;
+        color: #000000;
+        text-align: left;
+        text-indent: 8px;
+        border-radius: 0 0 3px 3px;
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu_list span {
+        line-height: 35px;
+        padding-top: 9px;
+    }
+    .menu_list a:hover {
+        background: #d70937;
+        color: #ffffff!important;
+    }
+
+    .nav .list:hover .menu_list{
+        /*display: block;*/
+        visibility: visible;
+        opacity: 1;
+        margin-top: -2px;
+    }
+
+    .nav .list .menu_list a {
+        display: block;
+        color: #000;
+        position: relative;
+        padding: 3px 5px;
+        border: none !important;
+        font-size: 14px;
+
+    }
+    .nav .list .menu_list a:hover ,.nav .hover .menu_list a {
+        color: initial!important; 
+        border-bottom: none !important;
+        border: none !important;
+    }
+    .nav .list a em{
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        display: inline-block;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid  #4e4e4e;
+        transition: all .6s ease 0s;
+        position: relative;
+        top: -3px;
+    }
+    .nav .list:hover a em{
+        transform: rotate(180deg);
+    }
+    .nav .list {
+        width: 101px;
+    }
+    .nav .list a:hover {
+        border-right: 1px #eeeeee solid;
+        border-left: 1px #eeeeee solid;
+        border-top: 1px #eeeeee solid;
+        border-radius: 3px 3px 0 0;
+    }
+    .nav .list:hover a {
+        border-right: 1px #eeeeee solid;
+        border-left: 1px #eeeeee solid;
+        border-top: 1px #eeeeee solid;
+        border-radius: 3px 3px 0 0;
+        color: #d70937!important;
+        margin-top: -1px;
+        cursor: pointer;
+    }  
+    .nav .list:hover a:nth-child(1){
+        color:#221815!important;
+        cursor: default;
+        transition: none;
+        border-bottom: 2px #ffffff solid;
+    }
+    .nav .list:hover .menu_list a{
+        color: #221815!important;
+    }
+    .nav .list .menu_list a:hover {
+        background: #ffffff;
+        border-radius: 3px;
+        color: #d70937!important; 
+        cursor: pointer;
+    }

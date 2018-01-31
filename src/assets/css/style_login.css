@@ -1,0 +1,150 @@
+
+.contentMain {
+  width: 1200px;
+  margin: auto;
+  margin-top: 30px;
+}
+.loginbox{padding:50px 0px;}
+.loginLeft{float:left;width:600px;}
+.loginLeft img{width:600px;height:400px;}
+.loginRight {
+  float: left;
+  width: 450px;
+  background: #ffffff;
+  border-left: 0px;
+  padding: 70px 0px 0px 150px;
+  height: 330px;
+}
+
+.loginRight .inputfield {
+  padding-left: 50px;
+  border: 1px solid #E6E6E6;
+  width: 275px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+
+
+.loginRight .inputfield input {
+  line-height: 42px;
+  border: 0px;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 0px 5px 5px 0px;
+  width: 255px;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+
+.loginRight .inputfield img {
+  position: absolute;
+  margin: 7px 0px 0px 14px;
+}
+
+.loginRight .rememberBox {
+  margin: 15px 0px;
+  font-size: 14px;
+}
+
+.loginRight .green {
+  width: 327px;
+  padding: 8px 0px;
+  font-size: 20px;
+}
+
+.loginRight .green2 {
+  width: 100px;
+  padding: 1px 0px;
+  font-size: 14px;
+}
+
+.loginRight p {
+  width: 320px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.green {
+  background: #d70937;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0px 10px;
+  display: inline-block;
+  border-radius: 0px;
+  border: 0px;
+  text-align: center;
+  line-height: 30px;
+  min-width: 100px;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+
+a.green {
+  min-width: 80px;
+}
+
+.green:hover {
+  text-decoration: none;
+  background: #ff3434
+}
+
+select {
+  border: 1px solid #c5c5c5;
+  padding: 3px 5px;
+  height: 30px;
+}
+
+.ui-input {
+  width: 200px;
+  height: 22px;
+  padding: 4px 5px;
+  line-height: 22px;
+  color: #595959;
+  font-size: 14px;
+  border: 1px solid #c5c5c5
+}
+
+.ui-input:hover,
+.ui-textarea:hover,
+.ui-input:focus,
+.ui-textarea:focus,
+.ui-input-hover {
+  border: 1px solid #0697da
+}
+
+.ui-input:focus,
+.ui-textarea:focus,
+.ui-input-focus,
+input:focus,
+select:focus,
+button:focus {
+  outline: 0
+}
+
+.regBox{    padding: 30px 0px 0px 130px;
+    height: 370px;
+    width: 470px;}
+.regBox table tr{height:50px;}
+.regBox table tr .ui-input{width:314px;}
+.regBox table tr td {width:420px;padding: 5px 0px;}
+.regBox table tr td span{color:#ff0000;margin-right:5px;}
+.regBox table tr td .tologin{color:#666666;margin-left:20px;}
+
+.regBox .onError,.regBox .onLoad,.regBox .onFocus,.regBox .onShow,.regBox .onCorrect{
+    background-color: transparent;
+        padding: 4px 0px 0px 23px;
+    font-size: 12px;
+    vertical-align: middle;
+    display: block;
+    margin-left: 0px;
+    margin-top: 5px;
+    height: 18px;
+    line-height: 16px;
+    width: 300px;
+}
+
+.regBox .onShow{padding-left:0px;}
+
+#branchcode {width: 160px;}
+.register-readinfo {font-size: 13px;}

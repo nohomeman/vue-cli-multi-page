@@ -1,0 +1,5 @@
+.pageBox{text-align: right;line-height: 24px;padding: 20px 28px;background: #ffffff;font-family:Arial;}
+.pageBox .prev,.pageBox .next {display:inline-block;border: 1px solid #e5e5e5;width: 28px;background: rgb(255, 255, 255);color:#ada5ad;text-align: center;transition: all .4s ease 0s;}
+.pageBox .num,.pageBox .end,.pageBox .first{border: 1px solid #e5e5e5;width:24px;display: inline-block;text-align: center;margin: 0px 2px;color:#ada5ad;transition: all .4s ease 0s;}
+.pageBox .current{border:none;width: 28px;display: inline-block;text-align: center;margin: 0px 2px;color:#221815;background:none;}
+.pageBox a:hover { background: #dddddd; }

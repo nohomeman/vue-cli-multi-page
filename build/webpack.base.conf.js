@@ -66,7 +66,7 @@ var webpackConfig = {
           name: utils.assetsPath('fonts/[name].[ext]')
         }
       },
-      
+
     ]
   },
   plugins: [
@@ -78,15 +78,18 @@ var webpackConfig = {
       minChunks: 4 || chunks.length //公共模块被使用的最小次数。比如配置为3，也就是同一个模块只有被3个以外的页面同时引用时才会被提取出来作为common chunks。
 
     }),*/
-   
+   new webpack.ProvidePlugin({
+   $: "jquery",
+   jQuery: "jquery",
+   jquery: "jquery",
+   "window.jQuery": "jquery"})
   ]
 }
 
 
-
 module.exports = vuxLoader.merge(webpackConfig, {
     options: {
-    
-  },	
+
+  },
   plugins: ['vux-ui', 'progress-bar', 'duplicate-style']
 })

@@ -28,7 +28,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].js'),
-    chunkFilename: utils.assetsPath('js/[id].js')
+    chunkFilename: utils.assetsPath('js/[id].chunk.js')
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
@@ -86,7 +86,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       chunks: chunks,
-	  	minChunks: 4 || chunks.length 
+	  	minChunks: 4 || chunks.length
     }),
 	/*
     // copy custom static assets
@@ -98,7 +98,7 @@ var webpackConfig = merge(baseWebpackConfig, {
       }
     ])*/
 
-   
+
 
   ]
 })
@@ -137,7 +137,7 @@ for (var pathname in pages) {
     inject: true,              // js插入位置
 	hash:true
   };
- 
+
   webpackConfig.plugins.push(new HtmlWebpackPlugin(conf));
 }
 
